@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="qd" content="supportOrientationchange=true">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            width: 7.5rem; 
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .block {
+            background: #ccc;
+            color: #fff;
+            width: 7.5rem;
+            height: 1rem;
+            margin: .1rem auto 0;
+            font-size: .3rem;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        #test{
+            width: 3rem;
+            height: 7rem;
+            margin-left: 2rem;
+            /*margin-left: 200px;*/
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- 开发组件的预览代码，也可用于测试 -->
+        <div class="block mb-iphone-show">
+            .mb-iphone-show (iphone下显示)
+        </div>
+        <div class="block mb-gphone-show">
+            .mb-gphone-show (gphone下显示)
+        </div>
+        <div class="block mb-wx-show">
+            .mb-wx-show (微信下显示)
+        </div>
+        <div class="block mb-browser-show">
+            .mb-browser-show (非微信浏览器下显示)
+        </div>
+        <div class="block hide mb-show">
+        .mb-show (手机内display: block，即 body .mb-show{})
+        </div>
+        <div class="block mb-hide">
+            .mb-hide (手机内display: none)
+        </div>
+        <div id="test"></div>
+    </div>
+    <script src="index.js"></script>
+    <script type="text/javascript">
+    if( !mobile.isMobile ) {
+        window.location = 'https://github.com/QiaoDing18';
+    }
+</script>
+</body>
+</html>
