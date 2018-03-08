@@ -18,7 +18,7 @@ mobile.supportOrientationchange = defaultConfig.supportOrientationchange;
 (function () {
     // querySelector选择出来的是静态的，不能再做修改
     var viewportEl = document.querySelector('meta[name="viewport"]'); // 获取name为vieport的meta
-    var mobileEl = document.querySelector('meta[name="pangu-mobile"]'); // 获取name为mobile的meta
+    var mobileEl = document.querySelector('meta[name="QiaoDing"]'); // 获取name为mobile的meta
 
     var designWidth = defaultConfig.designWidth; // 获取默认宽度
 
